@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Gauge Test</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="css/speedometer.css" rel="stylesheet" type="text/css" />
+    <link href="//cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="js/speedometer.js"></script>
+    <script src="./libraries/p5.js"></script>
+
+    <script src="//cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#FF0000"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="/manifest.json" />
+</head>
+<body>
+    <div class="page-container">
+        <div class="box box-1">
+            <div class="header-block">
+                <div class="header-sub-col">
+                    <div id="mySidenav" class="sidenav">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <a href="/">Dashboard</a>
+                      <a href="/reports">Reports</a>
+                    </div>                
+                    <div class="navigation-btn">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    </div>
+                </div>
+                <div class="header-sub-col header-center">
+                    <div id="dashobard-header-title">
+                        <h1>Trenchless Engineering Services Pvt Ltd</h1>
+                    </div>
+                    <div>
+                        <div class="log-container">
+                            <div>
+                                <img src="./img/admin-logo.png" width="60" alt="" />
+                            </div>
+                            <div class="log-txt">
+                                <div>AMERICAN</div>
+                                <div>AUGERS</div>                                
+                            </div>
+                            <div class="log-txt" style="font-style: italic;">&nbsp;DD-220T</div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="header-sub-col right">
+                    <h1 id="digital-clock"></h1>                
+                </div>
+            </div>
+        </div>
+        <div class="box box-2">
+            <div class="sub-box-container">
+                <div class="sub-box">
+                    <input id="speedometer-1" />                
+                </div>
+                <div class="sub-box">
+                    <input id="speedometer-2" />
+                </div>
+                <div class="sub-box">
+                    <input id="speedometer-3" />
+                </div>
+                <div class="sub-box">
+                    <input id="speedometer-4" />
+                </div>            
+            </div>
+        </div>
+        <div class="box box-3">
+            <div>
+                <div class="flex-grid-container battery-svg">
+                   <div class="flex-grid-top">
+                      <p class="fuel-digits-counter" id="battery-level">0</p>
+                   </div>
+                   <div class="flex-grid-bottom">
+                   </div>
+                </div>
+            </div>
+            <div>
+                <div class="GaugeMeter" id="carriage-postion-level" data-size="250" data-theme="White" data-back="RGBa(0,0,0,.1)" data-animate_gauge_colors=true data-animate_text_colors=true data-width="15" data-animationstep = 0 data-label="Carriage Position" data-style="Arch" data-label_color="#FFF" data-total="100" data-text_size="0.18"></div>
+            </div>
+            <div>
+                <div class="GaugeMeter" id="rotary-rpm-level" data-size="250" data-theme="White" data-back="RGBa(0,0,0,.1)" data-animate_gauge_colors=true data-animate_text_colors=true data-width="15" data-animationstep = 0 data-label="Rotary RPM" data-style="Arch" data-label_color="#FFF" data-total="100" data-text_size="0.18"></div>
+            </div>
+            <div>
+                <div class="flex-grid-container fuel-svg">
+                   <div class="flex-grid-top">
+                      <p class="fuel-digits-counter" id="fuel-level">0</p>
+                   </div>
+                   <div class="flex-grid-bottom">
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./js/sketch.js"></script>
+<script src="./js/GaugeMeter.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'Hero';
+src: url('../fonts/Hero.eot');
+src: url('../fonts/Hero.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Hero.woff') format('woff'),
+url('../fonts/Hero.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Helvetica Neue LT Pro';
+src: url('../fonts/HelveticaNeueLTPro-Lt.eot');
+src: url('../fonts/HelveticaNeueLTPro-Lt.eot?#iefix') format('embedded-opentype'),
+url('../fonts/HelveticaNeueLTPro-Lt.woff') format('woff'),
+url('../fonts/HelveticaNeueLTPro-Lt.ttf') format('truetype');
+font-weight: 300;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Helvetica Neue MD Pro';
+src: url('../fonts/HelveticaNeueLTPro-Md.eot');
+src: url('../fonts/HelveticaNeueLTPro-Md.eot?#iefix') format('embedded-opentype'),
+url('../fonts/HelveticaNeueLTPro-Md.woff') format('woff'),
+url('../fonts/HelveticaNeueLTPro-Md.ttf') format('truetype');
+font-weight: 500;
+font-style: normal;
+}
+
+body {
+	-webkit-transition: opacity 0.4s;
+	-moz-transition: opacity 0.4s;
+	-ms-transition: opacity 0.4s;
+	-o-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+	font-size: 16px;
+
+	opacity: 1;
+	text-shadow: none !important;
+}
+
+body, input, select, textarea, button, .ui-btn,h1,h2,h3,h4,h5,h6 {
+	font-family: "RobotoDraft","Roboto","Helvetica Neue",sans-serif;
+	font-weight: 400;
+}
+
+main{display: none;}
+html,
+body {
+	height: 100%;
+}
+body{margin: 0px!important;background: #00328a;}
+.page-container {
+	height: 100%;
+  min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}	
+.box {
+	color: white;
+	font-family: sans-serif;
+/*	font-size: 36px;*/
+	padding: 20px;
+	
+	display: flex;
+}
+
+.box-1 {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.box-2 {
+	flex: 1;
+	flex-direction: column;
+	justify-content: space-around;	
+}
+
+.box-3 {
+	justify-content: space-evenly;	
+/*	height: 60px;*/
+}
+.sub-box-container{display: flex; flex-direction: row;justify-content: space-around;}
+
+/** Side bar start **/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.navigation-btn{text-align: left;}
+/** Side bar end **/
+#speedometer-1,#speedometer-2,#speedometer-3,#speedometer-4{display: none!important;}
+#dashobard-header-title h1{font-family: Helvetica Neue MD Pro!important;font-size: 40px!important;color: #f58220; font-weight: 800;text-align: center;}
+.header-block{display: flex;flex: 1;align-items: center;color: #ffffff;}
+.header-sub-col{flex: 1;}
+.header-block .right{text-align: right;font-size: 40px;}
+#mySidenav{font-family: 'Roboto'; text-align: left;}
+.header-block .right h1{font-size: 30px;font-weight: 800;}
+.numb{font-family: 'Roboto'!important;}
+.meterTitle {
+	color: #FFF;
+	line-height: 185PX;
+	font-family:Roboto!important;
+	font-size: 20px;
+	font-weight:bold;
+  text-align: center;
+}
+.meter-label{font-family:Roboto!important;font-size: 20px!important;}
+.log-container{display: flex;flex-direction: row;align-items: center;justify-content: center;text-align: center;}
+.log-container h3{font-size: 20px!important;font-weight: 800;}
+.log-txt{  font-size: 25px;font-weight: 800;font-family: Helvetica Neue MD Pro;line-height: 1;}
+.header-center{flex-grow: 2;  flex-shrink: 2;flex-basis: 0;}  
+.flex-grid-container {padding-bottom: 20px;border-radius: 20px;  height: 200px;width: 200px;display: flex;flex-direction: column;justify-content: space-between;}
+.flex-grid-top {width: calc(100% - 37px);position: relative;top: 10px;}
+.flex-grid-bottom {display: flex;justify-content: left;align-items: left;background-color: #314594;border-radius: 10px;margin: 0 10px;position: relative;}
+.fuel-digits-counter{font-size: 40px;font-weight: 800;color: #fff;text-align: center;font-family: Helvetica Neue MD Pro;}
+.fuel-svg{background-image: url('../img/gas-station-fuel.svg');background-size:100%;background-position: center;background-repeat: no-repeat;}
+.battery-svg{background-image: url('../img/Vector.svg');background-size:100%;background-position: center;background-repeat: no-repeat;}
+.battery-svg .flex-grid-top{width: calc(100% - 0px)!important;position: relative!important;top: 70px!important;}
+.box-3{font-size: unset!important;}
+#carriage-postion-level b,#rotary-rpm-level b{font-size: 16px!important;}
+
+.GaugeMeter {
+  position: Relative;
+  text-align: Center;
+  overflow: Hidden;
+  cursor: Default;
+  display: inline-block;
+}
+.GaugeMeter SPAN, .GaugeMeter B {
+  width: 54%;
+  position: Absolute;
+  text-align: Center;
+  display: Inline-Block;
+  color: RGBa(0,0,0,.8);
+  font-weight: 100;
+  font-family: "Open Sans", Arial;
+  overflow: Hidden;
+  white-space: NoWrap;
+  text-overflow: Ellipsis;
+  margin: 0 23%;
+}
+.GaugeMeter S, .GaugeMeter U {
+  text-decoration: None;
+  font-size: .60em;
+  font-weight: 200;
+  opacity: .6;
+}
