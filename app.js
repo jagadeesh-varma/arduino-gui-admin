@@ -136,7 +136,7 @@ function onOpen(){
 function onData(data){
     incomeData= new Buffer(data).toString('ascii');
     toApp = incomeData;
-    console.log(toApp);
+    //console.log(toApp);
     var firstChar = "";
     if(incomeData.length > 0){
             firstChar = incomeData[0];
@@ -201,8 +201,8 @@ function onData(data){
                     rotary_rpm = incomeData;
                     rotary_rpm = Math.round(rotary_rpm);
                     break;
-                default:
-                    console.log("");
+                // default:
+                //     console.log("");
             }                    
     }
 }
