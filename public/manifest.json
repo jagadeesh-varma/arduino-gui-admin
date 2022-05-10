@@ -14,7 +14,7 @@
     }
   ],
   "start_url": "/?utm_source=homescreen",
-  "background_color": "#FF0000",
+  "background_color": "#00328a",
   "scope": ".",
   "display": "standalone",
   "orientation": "portrait-primary",
@@ -22,5 +22,5 @@
   "description": "Progressive Web Application by Michael Stattelman.",
   "dir": "ltr",
   "lang": "en-US",
-  "theme_color": "#FF0000"
+  "theme_color": "#00328a"
 }
