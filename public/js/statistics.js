@@ -40,7 +40,7 @@ function getStatistics(start="",end=""){
             "autoWidth": false,
             "searching": false,
             "aaSorting": [[0, "desc"]],
-            scrollY:        "500px",
+            scrollY:        "400px",
             scrollX:        true,
             scrollCollapse: true,
             dom: 'Blfrtip',

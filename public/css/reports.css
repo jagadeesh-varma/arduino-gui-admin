@@ -13,3 +13,5 @@ table.dataTable thead th{text-align: left!important;}
 #data-listing_wrapper .dt-buttons{display: none;}
 .box-2{padding: 0px 20px!important;}
 .data-table-container{margin-top: 5px;}
+table.dataTable thead th{font-family: 'Roboto';font-size: 14px!important;}
+#data-listing td{font-family: 'Roboto';font-size: 14px!important;}

@@ -3,10 +3,19 @@
     */
     @media only screen and (min-width: 960px) {
         /* styles for browsers larger than 960px; */
+        /*.envelope{transform: scale(0.5)}*/
+        #dashobard-header-title h1{font-size: 30px!important;}
+        .log-txt{font-size: 20px!important;}
+        .header-block .right h1{font-size: 20px!important;}
+        .box-1{padding-top: 0px!important;}
+        .flex-grid-container{height: 120px!important;width: 120px!important;}
+        .battery-svg .flex-grid-top{top: 40px!important;}
+        .fuel-digits-counter{font-size: 25px!important;}
+        .flex-grid-top{    width: calc(100% - 20px)!important;top: 5px!important;}
+        body{overflow-y: hidden;}
     }
     @media only screen and (min-width: 1440px) {
         /* styles for browsers larger than 1440px; */
-        .envelope{transform: scale(0.5)}
     }
     @media only screen and (min-width: 2000px) {
         /* for sumo sized (mac) screens */

@@ -69,9 +69,9 @@ function setup() {
 					incomeData = data.substring(1);
 					incomeData = incomeData.replace(/[\n\r]+/g, ' ');
 					incomeData = incomeData.split('g')[0]; 
-					incomeData = incomeData * 100 /1023;
-					carriage_position=incomeData;
-					$("#carriage-postion-level").gaugeMeter({percent:carriage_position.toFixed(1),text:carriage_position.toFixed(1)});
+					incomeData1 = incomeData * 100 /1023;
+					incomeData2 = incomeData * 20 /1023;
+					$("#carriage-postion-level").gaugeMeter({percent:incomeData1.toFixed(1),text:incomeData2.toFixed(1)});
 					break;
 				case "h":
 					incomeData = data.substring(1);
