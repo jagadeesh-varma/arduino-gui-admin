@@ -71,3 +71,5 @@
         gagueLabel:'psi',
         title:'Vice'
     });
+
+    $("#carriage-postion-level").sevenSegArray({ digits: 4, value: 12.35 });

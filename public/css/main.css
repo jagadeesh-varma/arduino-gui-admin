@@ -159,7 +159,7 @@ body{margin: 0px!important;background: #00328a;}
 .fuel-svg{background-image: url('../img/gas-station-fuel.svg');background-size:100%;background-position: center;background-repeat: no-repeat;}
 .battery-svg{background-image: url('../img/Vector.svg');background-size:100%;background-position: center;background-repeat: no-repeat;}
 .battery-svg .flex-grid-top{width: calc(100% - 0px)!important;position: relative!important;top: 70px!important;}
-.box-3{font-size: unset!important;}
+.box-3{font-size: unset!important;align-items: center;}
 #carriage-postion-level b,#rotary-rpm-level b{font-size: 16px!important;}
 
 .GaugeMeter {
@@ -188,3 +188,7 @@ body{margin: 0px!important;background: #00328a;}
   font-weight: 200;
   opacity: .6;
 }
+#carriage-postion-level{width: 120px;background: #000;padding: 10px;border-radius: 9px;border: 2px solid #fff;}
+#rotary-rpm-level{width: 120px;background: #000;padding: 10px;border-radius: 9px;border: 2px solid #fff;}
+.sevenSeg-svg{fill: unset!important;}
+.digital-merter-label{display: flex;align-items: center;justify-content: center;margin-top: 10px;font-family: 'Helvetica Neue MD Pro';font-size: 18px;text-shadow: none;}

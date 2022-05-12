@@ -10,6 +10,9 @@
     <script type="text/javascript" src="/socket.io/socket.io.js"></script>
     <script src="js/speedometer.js"></script>
     <script src="./libraries/p5.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/knockout-2.2.1.js"></script>
+    <script src="./js/sevenSeg.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
@@ -81,10 +84,14 @@
                 </div>
             </div>
             <div>
-                <div class="GaugeMeter" id="carriage-postion-level" data-size="180" data-theme="White" data-back="RGBa(0,0,0,.1)" data-animate_gauge_colors=true data-animate_text_colors=true data-width="15" data-animationstep = 0 data-label="Carriage Position" data-style="Arch" data-label_color="#FFF" data-total="100" data-text_size="0.18"></div>
+                <div id="carriage-postion-level"></div>
+                <div class="digital-merter-label">Carriage Position</div>
+                <!-- <div class="GaugeMeter" id="carriage-postion-level" data-size="180" data-theme="White" data-back="RGBa(0,0,0,.1)" data-animate_gauge_colors=true data-animate_text_colors=true data-width="15" data-animationstep = 0 data-label="Carriage Position" data-style="Arch" data-label_color="#FFF" data-total="100" data-text_size="0.18"></div> -->
             </div>
             <div>
-                <div class="GaugeMeter" id="rotary-rpm-level" data-size="180" data-theme="White" data-back="RGBa(0,0,0,.1)" data-animate_gauge_colors=true data-animate_text_colors=true data-width="15" data-animationstep = 0 data-label="Rotary RPM" data-style="Arch" data-label_color="#FFF" data-total="100" data-text_size="0.18"></div>
+                <div id="rotary-rpm-level"></div>
+                <div class="digital-merter-label">Rotary RPM</div>                
+                <!-- <div class="GaugeMeter" id="rotary-rpm-level" data-size="180" data-theme="White" data-back="RGBa(0,0,0,.1)" data-animate_gauge_colors=true data-animate_text_colors=true data-width="15" data-animationstep = 0 data-label="Rotary RPM" data-style="Arch" data-label_color="#FFF" data-total="100" data-text_size="0.18"></div> -->
             </div>
             <div>
                 <div class="flex-grid-container fuel-svg">
