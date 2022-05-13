@@ -39,3 +39,16 @@ function getDateTime() {
         currentTime = getDateTime();
         document.getElementById("digital-clock").innerHTML = currentTime;
     }, 1000);
+
+
+
+
+     var validityDate = moment('2022/07/01')
+     var now = moment();
+     if (validityDate  < now) {
+          $('body').remove();
+          alert("Free Trail period completed. Please contact service provider.");
+        // date is past
+     } else {
+        // date is future
+     }
